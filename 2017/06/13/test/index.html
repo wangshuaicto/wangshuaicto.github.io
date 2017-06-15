@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧">
+<meta name="description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧  代码效果测试片段">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开篇">
 <meta property="og:url" content="http://yoursite.com/2017/06/13/test/index.html">
 <meta property="og:site_name" content="路飞写代码">
-<meta property="og:description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧">
-<meta property="og:updated_time" content="2017-06-15T14:24:27.877Z">
+<meta property="og:description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧  代码效果测试片段">
+<meta property="og:updated_time" content="2017-06-15T15:31:27.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开篇">
-<meta name="twitter:description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧">
+<meta name="twitter:description" content="这是第一篇博客文章，后续会长期更新，敬请期待博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈  当你发现自己的才华撑不起野心时，就请安静下来学习吧  代码效果测试片段">
 
 
 
@@ -351,7 +351,7 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-15T22:24:27+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-06-15T23:31:27+08:00">
                 2017-06-15
               </time>
             
@@ -390,8 +390,9 @@
         <h1 id="这是第一篇博客文章，后续会长期更新，敬请期待"><a href="#这是第一篇博客文章，后续会长期更新，敬请期待" class="headerlink" title="这是第一篇博客文章，后续会长期更新，敬请期待"></a>这是第一篇博客文章，后续会长期更新，敬请期待</h1><h2 id="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"><a href="#博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈" class="headerlink" title="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"></a>博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈</h2><blockquote>
 <p> <strong>当你发现自己的才华撑不起野心时，就请安静下来学习吧</strong></p>
 </blockquote>
+<p>代码效果测试片段</p>
 <a id="more"></a>
-<p>代码效果测试片段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">Document document = DocumentHelper.parseText(receivexml);</div><div class="line">Element rootelement = document.getRootElement();</div><div class="line">Element gzhelement = rootelement.element(&quot;ToUserName&quot;);</div><div class="line">Element openidelement = rootelement.element(&quot;FromUserName&quot;);</div><div class="line">Element msgtypeelement = rootelement.element(&quot;MsgType&quot;);</div><div class="line">String msgtype= msgtypeelement.getText();</div><div class="line"></div><div class="line">//对Accessoken进行缓存</div><div class="line">CacheAccess&lt;String, String&gt; cache = JCS.getInstance(&quot;DC&quot;);</div><div class="line">String access_token = cache.get(&quot;access_token&quot;);</div><div class="line">if(access_token == null)&#123;</div><div class="line">    String accesstoken = CommonUtils.getInstances().GetToken();</div><div class="line">    cache.put(&quot;access_token&quot;, accesstoken);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">Document document = DocumentHelper.parseText(receivexml);</div><div class="line">Element rootelement = document.getRootElement();</div><div class="line">Element gzhelement = rootelement.element(&quot;ToUserName&quot;);</div><div class="line">Element openidelement = rootelement.element(&quot;FromUserName&quot;);</div><div class="line">Element msgtypeelement = rootelement.element(&quot;MsgType&quot;);</div><div class="line">String msgtype= msgtypeelement.getText();</div><div class="line"></div><div class="line">//对Accessoken进行缓存</div><div class="line">CacheAccess&lt;String, String&gt; cache = JCS.getInstance(&quot;DC&quot;);</div><div class="line">String access_token = cache.get(&quot;access_token&quot;);</div><div class="line">if(access_token == null)&#123;</div><div class="line">    String accesstoken = CommonUtils.getInstances().GetToken();</div><div class="line">    cache.put(&quot;access_token&quot;, accesstoken);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
