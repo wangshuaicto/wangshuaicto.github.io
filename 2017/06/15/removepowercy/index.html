@@ -93,15 +93,22 @@
 
 
 
-<meta name="description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="路飞写代码">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。  通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面    从图中我们可以看到power-cy就是畅言的版权信息，那么我们就可以给按钮添加点击事件，进行删除该节点为什么选择添加点击事件，是因为这样可以防止在畅言还未渲染的时间操作DOM报错  那么问题来了，我们应该添加到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移除畅言打赏的版权信息">
+<meta property="og:url" content="http://yoursite.com/2017/06/15/removepowercy/index.html">
 <meta property="og:site_name" content="路飞写代码">
-<meta property="og:description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
+<meta property="og:description" content="需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。  通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面    从图中我们可以看到power-cy就是畅言的版权信息，那么我们就可以给按钮添加点击事件，进行删除该节点为什么选择添加点击事件，是因为这样可以防止在畅言还未渲染的时间操作DOM报错  那么问题来了，我们应该添加到">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/06/15/59429ad7d0c01.png">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/06/15/5942a014b6cd9.png">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/06/15/5942a31886088.png">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/06/15/5942a23e77144.png">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/06/15/5942a2a912e13.png">
+<meta property="og:updated_time" content="2017-06-15T15:27:05.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="路飞写代码">
-<meta name="twitter:description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
+<meta name="twitter:title" content="移除畅言打赏的版权信息">
+<meta name="twitter:description" content="需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。  通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面    从图中我们可以看到power-cy就是畅言的版权信息，那么我们就可以给按钮添加点击事件，进行删除该节点为什么选择添加点击事件，是因为这样可以防止在畅言还未渲染的时间操作DOM报错  那么问题来了，我们应该添加到">
+<meta name="twitter:image" content="https://ooo.0o0.ooo/2017/06/15/59429ad7d0c01.png">
 
 
 
@@ -129,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/15/removepowercy/"/>
 
 
 
 
 
-  <title>路飞写代码</title>
+  <title>移除畅言打赏的版权信息 | 路飞写代码</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -161,9 +168,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -296,9 +301,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -324,9 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/15/removepowercy/" itemprop="url">移除畅言打赏的版权信息</a></h1>
+          <h1 class="post-title" itemprop="name headline">移除畅言打赏的版权信息</h1>
         
 
         <div class="post-meta">
@@ -370,6 +373,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>&nbsp;&nbsp;文章浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
 
           
 
@@ -385,9 +393,7 @@
       
 
       
-        
-          
-            <ol>
+        <ol>
 <li><p>需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。</p>
 </li>
 <li><p>通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面</p>
@@ -403,20 +409,27 @@
 </li>
 </ol>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -424,151 +437,48 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王帅">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="路飞写代码">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/test/" itemprop="url">开篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-13T23:11:05+08:00">
-                2017-06-13
-              </time>
+              <a href="/2017/06/13/test/" rel="next" title="开篇">
+                <i class="fa fa-chevron-left"></i> 开篇
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-15T22:24:27+08:00">
-                2017-06-15
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="这是第一篇博客文章，后续会长期更新，敬请期待"><a href="#这是第一篇博客文章，后续会长期更新，敬请期待" class="headerlink" title="这是第一篇博客文章，后续会长期更新，敬请期待"></a>这是第一篇博客文章，后续会长期更新，敬请期待</h1><h2 id="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"><a href="#博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈" class="headerlink" title="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"></a>博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈</h2><blockquote>
-<p> <strong>当你发现自己的才华撑不起野心时，就请安静下来学习吧</strong></p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/13/test/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
+    <div class="post-spread">
+      
+    </div>
+  </div>
   
+  
+<!-- 添加打赏-->
+<!-- 代码1：放在页面需要展示的位置  -->
+<!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
+<div id="cyReward" role="cylabs" data-use="reward" style="text-align: center;"></div>
+<!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+<!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+<!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+<!-- 添加打赏-->
 
 
           </div>
@@ -576,6 +486,30 @@
 
 
           
+  <div class="comments" id="comments" style="margin:0px;border:6px #f3f3f4 solid;">
+    
+
+
+
+    <!--添加网易云跟贴-->
+    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper" style="padding:0px;"></div>
+    <script>
+    var cloudTieConfig = {
+            sourceId: "2017-06-15-020649",
+            productKey: "12512272cc11434ca96db05a0eedd6d7",
+            target: "cloud-tie-wrapper"
+    };
+    </script>
+    <!--添加网易云跟贴-->
+
+
+
+
+
+
+    
+  </div>
+
 
         </div>
         
@@ -777,10 +711,10 @@ $(function(){
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
