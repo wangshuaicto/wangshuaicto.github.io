@@ -93,15 +93,18 @@
 
 
 
-<meta name="description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="路飞写代码">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢hexo中_config.yml配置文件中有post_asset_folder: true 属性，设置为true那么在新建文章的时候，会自动生成和标题名字一样的目录名字。那么在hexo generate中会自动生成到public中，前提是在图床能用的时候，这些都是多余的，那么有什么办法既能保持目录结构，同时gener">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo防止图床失效备份图片目录以备后续正常使用">
+<meta property="og:url" content="http://yoursite.com/2017/07/01/bakimagestore/index.html">
 <meta property="og:site_name" content="路飞写代码">
-<meta property="og:description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
+<meta property="og:description" content="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢hexo中_config.yml配置文件中有post_asset_folder: true 属性，设置为true那么在新建文章的时候，会自动生成和标题名字一样的目录名字。那么在hexo generate中会自动生成到public中，前提是在图床能用的时候，这些都是多余的，那么有什么办法既能保持目录结构，同时gener">
+<meta property="og:image" content="https://ooo.0o0.ooo/2017/07/01/5957b7c7563cd.png">
+<meta property="og:updated_time" content="2017-07-01T15:43:56.935Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="路飞写代码">
-<meta name="twitter:description" content="一个懒人的技术分享，买完kindle就压箱底的书籍分享">
+<meta name="twitter:title" content="Hexo防止图床失效备份图片目录以备后续正常使用">
+<meta name="twitter:description" content="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢hexo中_config.yml配置文件中有post_asset_folder: true 属性，设置为true那么在新建文章的时候，会自动生成和标题名字一样的目录名字。那么在hexo generate中会自动生成到public中，前提是在图床能用的时候，这些都是多余的，那么有什么办法既能保持目录结构，同时gener">
+<meta name="twitter:image" content="https://ooo.0o0.ooo/2017/07/01/5957b7c7563cd.png">
 
 
 
@@ -129,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/01/bakimagestore/"/>
 
 
 
 
 
-  <title>路飞写代码</title>
+  <title>Hexo防止图床失效备份图片目录以备后续正常使用 | 路飞写代码</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -161,9 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -296,9 +297,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -324,9 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/01/bakimagestore/" itemprop="url">Hexo防止图床失效备份图片目录以备后续正常使用</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hexo防止图床失效备份图片目录以备后续正常使用</h1>
         
 
         <div class="post-meta">
@@ -370,134 +369,10 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢"><a href="#需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢" class="headerlink" title="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢"></a>需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢</h2><p>hexo中_config.yml配置文件中有post_asset_folder: true 属性，设置为true<br>那么在新建文章的时候，会自动生成和标题名字一样的目录名字。那么在hexo generate中会自动生成到public中，<br>前提是在图床能用的时候，这些都是多余的，那么有什么办法既能保持目录结构，同时generate的时候又不会到public当中</p>
-<p>hexo中以”<em>“开头的文件夹是隐藏的，那么我们可以修改源码，让其生成的目录带上”</em>“就可以保证是隐藏。如果后续图床失效了，那么我们还可以打开这些隐藏的文件夹。<br>通过全局搜索我们发现<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/01/bakimagestore/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/15/removepowercy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王帅">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="路飞写代码">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/15/removepowercy/" itemprop="url">移除畅言打赏的版权信息</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T22:27:49+08:00">
-                2017-06-15
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-07-01T23:47:45+08:00">
-                2017-07-01
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>&nbsp;&nbsp;文章浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
           
 
           
@@ -514,32 +389,31 @@
       
 
       
+        <h2 id="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢"><a href="#需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢" class="headerlink" title="需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢"></a>需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢</h2><p>hexo中_config.yml配置文件中有post_asset_folder: true 属性，设置为true<br>那么在新建文章的时候，会自动生成和标题名字一样的目录名字。那么在hexo generate中会自动生成到public中，<br>前提是在图床能用的时候，这些都是多余的，那么有什么办法既能保持目录结构，同时generate的时候又不会到public当中</p>
+<p>hexo中以”<em>“开头的文件夹是隐藏的，那么我们可以修改源码，让其生成的目录带上”</em>“就可以保证是隐藏。如果后续图床失效了，那么我们还可以打开这些隐藏的文件夹。<br>通过全局搜索我们发现<br><a id="more"></a><br><img src="https://ooo.0o0.ooo/2017/07/01/5957b7c7563cd.png"><br><!--–&gt;</p>
+<p>此处是生成目录文件的位置。那么我们添加日志通过修改以后。就实现了自动生成_目录<br><img src="https://ooo.0o0.ooo/2017/07/01/5957b8bb50722.png"><br> <!--–&gt;</p>
+--></p>
+      
+    </div>
+
+    <div>
+      
         
-          <ul>
-<li><h6 id="需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。"><a href="#需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。" class="headerlink" title="需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。"></a>需求描述，在添加完畅言的打赏功能后，发现在弹出界面中有畅言的一些版权信息。于是萌生了一种想要去除的想法。</h6></li>
-<li><h6 id="通过Chrome-Debug工具我们可以发现畅言的打赏按钮以及相关的页面"><a href="#通过Chrome-Debug工具我们可以发现畅言的打赏按钮以及相关的页面" class="headerlink" title="通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面"></a>通过Chrome Debug工具我们可以发现畅言的打赏按钮以及相关的页面</h6><img src="https://ooo.0o0.ooo/2017/06/15/59429ad7d0c01.png" alt="" title="畅言打赏DOM"><!--–&gt;
-</li>
-</ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/15/removepowercy/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
@@ -547,152 +421,52 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王帅">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="路飞写代码">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/test/" itemprop="url">开篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-13T23:11:05+08:00">
-                2017-06-13
-              </time>
+              <a href="/2017/06/15/removepowercy/" rel="next" title="移除畅言打赏的版权信息">
+                <i class="fa fa-chevron-left"></i> 移除畅言打赏的版权信息
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-15T23:31:27+08:00">
-                2017-06-15
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="这是第一篇博客文章，后续会长期更新，敬请期待"><a href="#这是第一篇博客文章，后续会长期更新，敬请期待" class="headerlink" title="这是第一篇博客文章，后续会长期更新，敬请期待"></a>这是第一篇博客文章，后续会长期更新，敬请期待</h1><h2 id="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"><a href="#博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈" class="headerlink" title="博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈"></a>博客正式上线了，老铁们，赶紧的来给我评论，跟帖盖楼吧，哈哈哈</h2><blockquote>
-<p> <strong>当你发现自己的才华撑不起野心时，就请安静下来学习吧</strong></p>
-</blockquote>
-<p>代码效果测试片段</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/13/test/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
+    <div class="post-spread">
+      
+    </div>
+  </div>
   
+  
+
+<!-- 添加打赏-->
+<!-- 代码1：放在页面需要展示的位置  -->
+<!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
+<div id="cyReward" role="cylabs" data-use="reward" style="text-align: center;"></div>
+<!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+<!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+<!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+<!-- 添加打赏-->
+
+
+
 
 
           </div>
@@ -700,6 +474,30 @@
 
 
           
+  <div class="comments" id="comments" style="margin:0px;border:6px #f3f3f4 solid;">
+    
+
+
+
+    <!--添加网易云跟贴-->
+    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper" style="padding:0px;"></div>
+    <script>
+    var cloudTieConfig = {
+            sourceId: "2017-07-01-020755",
+            productKey: "12512272cc11434ca96db05a0eedd6d7",
+            target: "cloud-tie-wrapper"
+    };
+    </script>
+    <!--添加网易云跟贴-->
+
+
+
+
+
+
+    
+  </div>
+
 
         </div>
         
@@ -719,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -764,6 +571,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢"><span class="nav-number">1.</span> <span class="nav-text">需求描述，为了以后防止图床不能使用，那么我博客的图片就需要保存一份，那么如何保存呢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -882,6 +705,18 @@
 
 
 
+<!--手动添加网易云跟贴-->
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyt3Pl0iM"></script>
+<script>
+$(function(){
+        $('#cyReward').click(function(){
+            $('.power-cy').remove();
+        });
+})
+</script>
+
 
 
 
@@ -890,10 +725,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
